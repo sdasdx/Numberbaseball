@@ -1,0 +1,165 @@
+
+<html>
+	<head>
+		<style type="text/css">
+			p{font: Segoe Script, 궁서체, "Times New Roman", Sans-serif;}
+		</style>
+	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /></head>
+<body background="background3.png" style="background-repeat:no-repeat" bgcolor="ivory" text="black" link="blue" vlink="purple" alink="red">
+
+
+<script type="text/javascript">
+
+      function numkeyCheck(e) {
+        var keyValue = event.keyCode;
+        if( ((keyValue >= 48) && (keyValue <= 57) ) ) return true;
+        else return false;
+      }
+    
+      
+      function KeyCheck(objName,objSize,nextObjName){
+        if( objName.value.length == objSize ){
+          nextObjName.focus();
+          return;
+        }
+      }
+     
+
+      function enter(obj, string) {
+      	   if(obj.field1.value==''){obj.field1.value = string}
+      	   else if (string==''&obj.field1.value!=''&obj.field2.value==''&obj.field3.value==''&obj.field4.value==''&obj.field5.value==''){obj.field1.value = ''}
+      	   else if (obj.field2.value==''){obj.field2.value = string}
+      	   else if (string==''&obj.field1.value!=''&obj.field2.value!=''&obj.field3.value==''&obj.field4.value==''&obj.field5.value==''){obj.field2.value = ''}
+           else if(obj.field3.value==''){obj.field3.value = string}
+           else if (string==''&obj.field1.value!=''&obj.field2.value!=''&obj.field3.value!=''&obj.field4.value==''&obj.field5.value==''){obj.field3.value = ''}    
+           else if(obj.field4.value==''){obj.field4.value = string}
+           else if (string==''&obj.field1.value!=''&obj.field2.value!=''&obj.field3.value!=''&obj.field4.value!=''&obj.field5.value==''){obj.field4.value = ''} 
+           else if(obj.field5.value==''){obj.field5.value = string}
+           else if (string==''&obj.field1.value!=''&obj.field2.value!=''&obj.field3.value!=''&obj.field4.value!=''&obj.field5.value!=''){obj.field5.value = ''}       
+        }
+</script>
+
+<p align="center" style="line-height:150%;">
+	<font face="돋움체" size="2">
+		<script language="JavaScript">
+			a = Math.ceil(Math.random() * 10)-1;
+			b = Math.ceil(Math.random() * 10)-1;while(b==a){b = Math.ceil(Math.random() * 10)-1;}
+			c = Math.ceil(Math.random() * 10)-1;while(c==a|c==b){c = Math.ceil(Math.random() * 10)-1;}
+			d = Math.ceil(Math.random() * 10)-1;while(d==c|d==a|d==b){d = Math.ceil(Math.random() * 10)-1;}
+			e = Math.ceil(Math.random() * 10)-1;while(e==d|e==c|e==a|e==b){e = Math.ceil(Math.random() * 10)-1;}
+			dap = '캬캬 답은'+a+b+c+d+e+"입니다";
+			var imsis = 0;
+			var imsib = 0;
+			var count1 = 1;
+		</script>
+	</font></p>
+
+
+<table border="0" width="350" height="450">
+
+
+<tr height="140"> 
+	<td>
+	</td>
+</tr>
+
+
+<tr>
+	<td height="200" bgcolor="">
+		<form name="abc1" method="get">
+			<center><textarea name="abc" rows="8" cols="30" style="border:0; width:82%; height:100%; font-family: Segoe Script; font-size:17; background-color:transparent " readonly="readonly">
+			</textarea></center>	
+	</td>
+</tr>
+
+
+<tr>
+	<td height="30" bgcolor="">
+		<p align="center" style="line-height:150%;">
+			<font size="4">
+				<input type="text" name="count" value="1" maxlength="3" size="3" onmousedown="if(this.value==777){if(event.button==3){alert(dap);}}" 
+			     		align="center"  style="width:40; height:30; background-color:ivory ;border:1 solid red; font-family:Arial; font-size:19pt; color:green; text-align:center;" readonly> Times
+			     <input type="image" src="home.png" value="  go home  " onClick="self.location='index.html';return false;" style=vertical-align:middle;>
+</tr>
+
+<tr>
+	<td style="padding-top:10" align="center">	
+	<form name="myForm" method="post" action="">
+	
+	<input type="text" name="field1" maxlength="1" size="1" OnKeyUp="KeyCheck(this,this.size,this.form.field2)"
+			onKeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;" 
+			style="width:45; height:45; background-color:ivory ;border:1 solid red; font-family:굴림; 
+			font-size:19pt; color:green; text-align:center; " readonly>
+			
+	<input type="text" name="field2" maxlength="1" size="1" OnKeyUp="KeyCheck(this,this.size,this.form.field3)"
+		onKeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;"
+		style="width:45; height:45; background-color:ivory ;border:1 solid red; font-family:굴림; 
+		font-size:19pt; color:green; text-align:center;  " readonly>
+
+	<input type="text" name="field3" maxlength="1" size="1" OnKeyUp="KeyCheck(this,this.size,this.form.field4)"
+			onKeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;"
+			style="width:45; height:45; background-color:ivory ;border:1 solid red; font-family:굴림; 
+			font-size:19pt; color:green; text-align:center; " readonly>
+		
+	<input type="text" name="field4" maxlength="1" size="1" OnKeyUp="KeyCheck(this,this.size,this.form.field5)"
+			onKeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;"
+			style="width:45; height:45; background-color:ivory ;border:1 solid red; font-family:굴림; 
+			font-size:19pt; color:green; text-align:center; " readonly>
+			
+	<input type="text" name="field5" maxlength="1" size="1" 
+			onKeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;"
+			style="width:45; height:45; background-color:ivory ;border:1 solid red; font-family:굴림; 
+			font-size:19pt; color:green; text-align:center; " readonly>
+
+
+	<input type="image" src="answer.png" value=" answer "  style=vertical-align:middle;
+			onClick="if(field5.value==''&&field4.value==''&&field3.value==''&&field2.value==''){alert('Please enter the numbers of five');return false;}
+					if(field5.value==''&&field4.value==''&&field3.value==''){alert('Please enter the numbers of five');return false;}
+					if(field5.value==''&&field4.value==''){alert('Please enter the numbers of five');return false;}
+					if(field5.value==''){alert('Please enter the numbers of five');return false;}
+					if(field1.value==field2.value|field2.value==field3.value|field3.value==field1.value|field1.value==field4.value|field2.value==field4.value|field3.value==field4.value|field1.value==field5.value|field2.value==field5.value|field3.value==field5.value|field4.value==field5.value){alert('You can not use the same numbers');return false;}
+					if(field5.value==e){imsis++;}
+					if(field4.value==d){imsis++;}
+					if(field2.value==b){imsis++;}
+					if(field3.value==c){imsis++;}
+					if(field1.value==a){imsis++;}
+					if(field5.value==a|field5.value==b|field5.value==c|field5.value==d){imsib++}
+					if(field4.value==a|field4.value==b|field4.value==c|field4.value==e){imsib++}
+					if(field3.value==a|field3.value==b|field3.value==d|field3.value==e){imsib++}
+					if(field2.value==a|field2.value==c|field2.value==d|field2.value==e){imsib++}
+					if(field1.value==b|field1.value==c|field1.value==d|field1.value==e){imsib++}
+					if(imsis==5){alert('Congratulation! your answer is right'+' in '+count1+'times '+'by '+a+b+c+d+e); self.location='section3.html';}
+					else{document.abc1.abc.value= count1+') '+field1.value+field2.value+field3.value+field4.value+field5.value+'▶'+imsis+'S'+imsib+'B   '+document.abc1.abc.value;imsis=imsib=0;count1++;count.value=count1;field1.value=field2.value=field3.value=field4.value=field5.value='';}return false;"> 
+		</font>
+	</td>
+</tr>
+
+</table>
+
+<br>
+
+
+<tr>
+	<td><input type="image" src="num0.png" value="  0  " onClick="enter(this.form, '0');return false;">
+	<td><input type="image" src="num1.png" value="  1  " onClick="enter(this.form, '1');return false;">
+	<td><input type="image" src="num2.png" value="  2  " onClick="enter(this.form, '2');return false;">
+	<td><input type="image" src="num3.png" value="  3  " onClick="enter(this.form, '3');return false;">
+	<td><input type="image" src="num4.png" value="  4  " onClick="enter(this.form, '4');return false;">
+	<td><input type="image" src="del.png" value="  del  " onClick="enter(this.form, '');return false;">
+</tr><br>
+
+<tr>
+	<td><input type="image" src="num5.png" value="  5  " onClick="enter(this.form, '5');return false;">
+	<td><input type="image" src="num6.png" value="  6  " onClick="enter(this.form, '6');return false;">
+	<td><input type="image" src="num7.png" value="  7  " onClick="enter(this.form, '7');return false;">
+	<td><input type="image" src="num8.png" value="  8  " onClick="enter(this.form, '8');return false;">
+	<td><input type="image" src="num9.png" value="  9  " onClick="enter(this.form, '9');return false;">
+	<td><input type="image" src="new.png" value="  new  " onClick="self.location='section3.html';return false;">
+</tr>
+
+
+		</form>
+	
+	</body>
+</html>

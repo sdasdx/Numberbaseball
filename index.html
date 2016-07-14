@@ -1,0 +1,67 @@
+
+<html>
+<head>
+<title></title>
+</head>
+<body background="first5.gif"; width=device-width; height=device-height; style="background-repeat:no-repeat";>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<style>
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+
+<td><input type="image" src="3zari.png" value="  uc  " style=" margin-left : 110px; margin-top  : 170px;" onClick="self.location='section1.html';return false;"></br>
+<td><input type="image" src="4zari.png" value="  uc2  " style=" margin-left : 5px; margin-top  : 90px;" onClick="self.location='section2.html';return false;"></br>
+<td><input type="image" src="5zari.png" value="  uc3  " style=" margin-left : 110px; margin-top  : 75px;" onClick="self.location='section3.html';return false;"></br>
+
+
+</body>
+</html>
